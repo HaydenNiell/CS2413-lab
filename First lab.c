@@ -21,13 +21,13 @@ struct ListNode* reverseList(struct ListNode* head) {
     struct ListNode *prev = NULL, *curr = head, *next = NULL;
     
     while (curr) {
-        next = curr->next;  // Store next node
-        curr->next = prev;  // Reverse current node's pointer
-        prev = curr;        // Move prev forward
-        curr = next;        // Move curr forward
+        next = curr->next;  
+        curr->next = prev;  
+        prev = curr;        
+        curr = next;       
     }
     
-    return prev; // New head of the reversed list
+    return prev; 
 }
 
 
